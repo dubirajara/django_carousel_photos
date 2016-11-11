@@ -63,7 +63,7 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
     {% for photo in photos %}   
-      {% if forloop.counter == 1 %}    
+      {% if forloop.first %}    
         <div class="item active">
       {% else %}
         <div class="item">
