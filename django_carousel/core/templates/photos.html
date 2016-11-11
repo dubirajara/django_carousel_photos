@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Django Carousel Photo Gallery</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+   .icon {
+        color: #000000;    
+   }
+
+   .carousel-control.right, .carousel-control.left {
+  background-image:none;
+}
+
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {float:none;}
+
+</style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+            <span class="sr-only">Django Carousel Photo Gallery</span>
+          <a class="navbar-brand" href="/admin">Django Photo Gallery with Bootstrap Carousel</a>
+        </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <br>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner" role="listbox">
+    {% for photo in photos %}   
+    {% if forloop.counter == 1 %}    
+        <div class="item active">
+        {% else %}
+    <div class="item">
+    {% endif %}                   
+              <img class="img-responsive center-block" src='{{ photo.image.url }}' alt="Image">
+              <div class="carousel-caption">
+              <h3>{{ photo.title }}</h3>
+              </div>
+        </div>
+    {%endfor%}
+</div>
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left icon" aria-hidden="true"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right icon" aria-hidden="true"></span>
+  </a>
+
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
