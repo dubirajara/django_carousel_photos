@@ -63,15 +63,15 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
     {% for photo in photos %}   
-    {% if forloop.counter == 1 %}    
+      {% if forloop.counter == 1 %}    
         <div class="item active">
-        {% else %}
-    <div class="item">
-    {% endif %}                   
-              <img class="img-responsive center-block" src='{{ photo.image.url }}' alt="Image">
-              <div class="carousel-caption">
-              <h3>{{ photo.title }}</h3>
-              </div>
+      {% else %}
+        <div class="item">
+      {% endif %}                   
+          <img class="img-responsive center-block" src='{{ photo.image.url }}' alt="Image">
+          <div class="carousel-caption">
+            <h3>{{ photo.title }}</h3>
+          </div>
         </div>
     {%endfor%}
 </div>
