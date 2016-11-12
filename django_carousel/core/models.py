@@ -2,11 +2,11 @@ from django.db import models
 
 
 class Photo(models.Model):
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=60, default='', blank=True)
+    description = models.TextField(max_length=200, default='', blank=True)
     width = models.IntegerField(default=0)
     height = models.IntegerField(default=0)
-    image = models.ImageField(
-        null=False, blank=False, width_field="width", height_field="height")
+    image = models.ImageField(width_field="width", height_field="height")
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
 
     def __str__(self):
@@ -14,3 +14,4 @@ class Photo(models.Model):
 
     class Meta:
         ordering = ["timestamp"]
+        verbose_name = 'Photo'
