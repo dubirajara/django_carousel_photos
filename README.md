@@ -12,4 +12,4 @@ python manage.py runserver
 
 
 
-![](https://i.gyazo.com/cfa4131a577ee9704a936cabcc3857f8.gif)
+![](http://i66.tinypic.com/11khavq.png)
