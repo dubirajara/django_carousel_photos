@@ -8,9 +8,9 @@ class HomeTest(TestCase):
         self.response = self.client.get(r('photo_carousel'))
 
     def test_get(self):
-        """GET 'Home' must return status code 200"""
+        """GET 'photo_carousel' must return status code 200"""
         self.assertEqual(200, self.response.status_code)
 
     def test_template(self):
-        """'Home' must use template index.html and base.html"""
+        """'photo_carousel' must use template photos.html"""
         self.assertTemplateUsed(self.response, 'photos.html')
