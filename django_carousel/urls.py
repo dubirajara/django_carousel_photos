@@ -21,7 +21,7 @@ from .core import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.photo_carousel),
+    url(r'^$', views.photo_carousel, name='photo_carousel'),
 ]
 
 if settings.DEBUG:
