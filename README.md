@@ -1,5 +1,8 @@
 # Django Photo Gallery with Bootstrap Carousel.
 
+[![Updates](https://pyup.io/repos/github/dubirajara/django_carousel_photos/shield.svg)](https://pyup.io/repos/github/dubirajara/django_carousel_photos/)
+
+
 - Install the dependencies, run the migrations and create django a admin user:
 
 ```sh
