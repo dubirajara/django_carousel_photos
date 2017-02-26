@@ -7,4 +7,7 @@ before_script:
   - python manage.py migrate
 script:
   - coverage run --source='django_carousel' manage.py test
-
+before_install:
+  - pip install coveralls
+after_success:
+  - coveralls
