@@ -19,7 +19,7 @@ python manage.py migrate
 ```sh
 python manage.py createsuperuser
 ```
-- Run tests an server:
+- Run tests and run server:
 ```sh
 python manage.py test 
 python manage.py runserver
