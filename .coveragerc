@@ -1,0 +1,3 @@
+[run]
+omit =
+    django_carousel/wsgi.py
