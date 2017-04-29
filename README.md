@@ -12,6 +12,7 @@ pip install -r requirements.txt
 - Run the migrations:
 
 ```sh
+python manage.py makemigrations
 python manage.py migrate
 ```
 - Create a django admin user:

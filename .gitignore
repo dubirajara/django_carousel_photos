@@ -5,4 +5,3 @@
 *.sqlite3
 *pyc
 __pycache__
-migrations
