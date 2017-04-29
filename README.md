@@ -4,6 +4,11 @@
 [![Updates](https://pyup.io/repos/github/dubirajara/django_carousel_photos/shield.svg)](https://pyup.io/repos/github/dubirajara/django_carousel_photos/)
 
 
+- Clone the repository.:
+
+```sh
+git clone https://github.com/dubirajara/django_carousel_photos.git && cd django_carousel_photos
+```
 - Install the dependencies:
 
 ```sh
