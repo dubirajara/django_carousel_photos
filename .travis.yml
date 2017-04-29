@@ -4,6 +4,7 @@ python:
 install:
   - pip install -q -r requirements.txt
 before_script:
+  - python manage.py makemigrations
   - python manage.py migrate
 script:
   - coverage run --source='django_carousel' manage.py test
