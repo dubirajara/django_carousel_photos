@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dubirajara/django_carousel_photos.svg?branch=master)](https://travis-ci.org/dubirajara/django_carousel_photos)
 [![Updates](https://pyup.io/repos/github/dubirajara/django_carousel_photos/shield.svg)](https://pyup.io/repos/github/dubirajara/django_carousel_photos/)
+[![Coverage Status](https://coveralls.io/repos/github/dubirajara/django_carousel_photos/badge.svg?branch=master)](https://coveralls.io/github/dubirajara/django_carousel_photos?branch=master)
 
 
 - Clone the repository.:
