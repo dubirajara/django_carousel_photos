@@ -35,4 +35,4 @@ python manage.py runserver
 
 
 
-![](http://i66.tinypic.com/11khavq.png)
+[screenshot.gif](https://postimg.org/image/7s545swtd/)
