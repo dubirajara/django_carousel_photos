@@ -7,7 +7,7 @@
 
 
 
-- Clone the repository.:
+- Clone the repository:
 
 ```sh
 git clone https://github.com/dubirajara/django_carousel_photos.git && cd django_carousel_photos
