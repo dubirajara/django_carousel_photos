@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.fields.files import ImageFieldFile, FileField
 
 
 class Photo(models.Model):
@@ -12,6 +13,13 @@ class Photo(models.Model):
     def __str__(self):
         return self.title
 
+    def get_pic(self):
+        if self.image:
+            return self.image
+        return ImageFieldFile(instance=None, field=FileField(),
+                              name='pictures/default.jpg')
+
     class Meta:
         ordering = ["timestamp"]
         verbose_name = 'Photo'
+
