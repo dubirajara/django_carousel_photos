@@ -15,7 +15,7 @@ class HomeTest(TestCase):
 
     def test_template(self):
         """'photo_carousel' must use template photos.html"""
-        self.assertTemplateUsed(self.response, 'photos.html')
+        self.assertTemplateUsed(self.response, 'bootstrap.html')
 
     def test_admin_link(self):
         """home contains admin link"""
@@ -24,7 +24,7 @@ class HomeTest(TestCase):
 
     def test_carousel_photo(self):
         """home contains carousel bootstrap"""
-        expected = 'id="{}"'.format('carousel-example-generic')
+        expected = 'id="{}"'.format('demo-carousel')
         self.assertContains(self.response, expected)
 
     def test_html(self):

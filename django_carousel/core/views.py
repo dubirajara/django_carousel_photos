@@ -7,4 +7,4 @@ def photo_carousel(request):
     context = {
         "photos": queryset,
     }
-    return render(request, 'photos.html', context)
+    return render(request, 'bootstrap.html', context)
