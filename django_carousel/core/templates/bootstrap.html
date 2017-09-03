@@ -49,7 +49,7 @@
       {% else %}
         <div class="carousel-item">
       {% endif %}
-          <img class="img-responsive center-block" src='{{ photo.image.url }}' alt="Image">
+          <img class="img-responsive center-block" src='{{ photo.image.url|default_if_none:'#' }}' alt="Image">
           <div class="carousel-caption">
             <h3>{{ photo.title }}</h3>
             <p>{{ photo.description }}</p>
