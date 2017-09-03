@@ -14,7 +14,7 @@ class HomeTest(TestCase):
         self.assertEqual(200, self.response.status_code)
 
     def test_template(self):
-        """'photo_carousel' must use template photos.html"""
+        """'photo_carousel' must use template bootstrap.html"""
         self.assertTemplateUsed(self.response, 'bootstrap.html')
 
     def test_admin_link(self):
