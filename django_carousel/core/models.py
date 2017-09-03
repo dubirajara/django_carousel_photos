@@ -12,10 +12,6 @@ class Photo(models.Model):
     def __str__(self):
         return self.title
 
-    def photo_url(self):
-        if self.image and hasattr(self.image, 'url'):
-            return self.image.url
-
     class Meta:
         ordering = ["timestamp"]
         verbose_name = 'Photo'
