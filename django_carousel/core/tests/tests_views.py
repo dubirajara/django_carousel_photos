@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.shortcuts import resolve_url as r
-from model_mommy import mommy
 
+from model_mommy import mommy
 
 
 class HomeTest(TestCase):
