@@ -49,7 +49,9 @@
       {% else %}
         <div class="carousel-item">
       {% endif %}
+        {% if photo.image %}
           <img class="img-responsive center-block" src='{{ photo.image.url }}' alt="Image">
+        {% endif %}
           <div class="carousel-caption">
             <h3>{{ photo.title }}</h3>
             <p>{{ photo.description }}</p>
