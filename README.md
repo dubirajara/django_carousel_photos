@@ -1,4 +1,4 @@
-# Django Photo Gallery with Bootstrap Carousel.
+# Django Photo Gallery with Bootstrap Carousel
 
 [![Build Status](https://travis-ci.org/dubirajara/django_carousel_photos.svg?branch=master)](https://travis-ci.org/dubirajara/django_carousel_photos)
 [![Updates](https://pyup.io/repos/github/dubirajara/django_carousel_photos/shield.svg)](https://pyup.io/repos/github/dubirajara/django_carousel_photos/)
