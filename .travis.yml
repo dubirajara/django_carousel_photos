@@ -1,9 +1,15 @@
 language: python
 python:
   - "3.6.0"
+services: postgresql
+addons:
+  postgresql: '9.6'
+env:
+   - DATABASE_URL=postgres://postgres@localhost/carouseldb
 install:
   - pip install -q -r requirements.txt
 before_script:
+  - psql -c "CREATE DATABASE carouseldb;" -U postgres
   - python manage.py migrate
   - python manage.py collectstatic --no-input
 script:
