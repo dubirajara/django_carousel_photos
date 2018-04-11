@@ -35,5 +35,4 @@ python manage.py runserver
 - And so, open django admin and add your photos in the carousel.
 
 
-
-![](https://s24.postimg.org/ce18e5icl/screenshot.gif)
+![](https://media.giphy.com/media/1pAec1lAYIfAtbOVpS/giphy.gif)
