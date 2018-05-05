@@ -15,4 +15,3 @@ class Photo(models.Model):
     class Meta:
         ordering = ["timestamp"]
         verbose_name = 'Photo'
-

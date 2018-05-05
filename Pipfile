@@ -4,11 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-Django = "==2.0.1"
-model_mommy = "==1.5.0"
-Pillow = "==5.0.0"
+Django = "*"
+Pillow = "*"
 
 [dev-packages]
+"flake8" = "*"
+model_mommy = "*"
 
 [requires]
 python_version = "3.6"

@@ -36,4 +36,3 @@ class HomeTest(TestCase):
         for expected in contents:
             with self.subTest():
                 self.assertContains(self.response, expected)
-

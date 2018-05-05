@@ -1,1 +1,1 @@
-default_app_config =  'django_carousel.core.apps.CoreConfig'
+default_app_config = 'django_carousel.core.apps.CoreConfig'
