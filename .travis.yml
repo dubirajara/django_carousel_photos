@@ -16,6 +16,8 @@ before_script:
 script:
   - coverage run --source='django_carousel' manage.py test
   - flake8
+  - pipenv run python manage.py test
+
 before_install:
   - pip install coveralls
 after_success:
