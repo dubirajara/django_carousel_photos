@@ -12,10 +12,10 @@
 ```sh
 git clone https://github.com/dubirajara/django_carousel_photos.git && cd django_carousel_photos
 ```
-- Install the dependencies:
+- Install the dependencies with pipenv:
 
 ```sh
-pip install -r requirements.txt
+pipenv install --dev
 ```
 - Run the migrations:
 
