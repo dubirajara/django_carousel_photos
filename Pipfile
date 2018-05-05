@@ -9,7 +9,7 @@ name = "pypi"
 
 Django = "==2.0.1"
 model_mommy = "==1.5.1"
-Pillow = "==5.0.0"
+Pillow = "==5.1.0"
 
 
 [dev-packages]
