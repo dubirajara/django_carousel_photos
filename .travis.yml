@@ -7,13 +7,15 @@ addons:
 env:
    - DATABASE_URL=postgres://postgres@localhost/carouseldb
 install:
-  - pip install -q -r requirements.txt
+  - pip install pipenv
+  - pipenv install
 before_script:
   - psql -c "CREATE DATABASE carouseldb;" -U postgres
   - python manage.py migrate
   - python manage.py collectstatic --no-input
 script:
   - coverage run --source='django_carousel' manage.py test
+  - pipenv run python manage.py test
 before_install:
   - pip install coveralls
 after_success:
