@@ -12,6 +12,7 @@ install:
   - pip install pipenv
   - pipenv install --dev
   - pipenv install sqlparse
+  - pipenv install entrypoints
 before_script:
   - psql -c "CREATE DATABASE carouseldb;" -U postgres
   - python manage.py migrate
