@@ -34,6 +34,3 @@ python manage.py test
 python manage.py runserver
 ```
 - And so, open django admin and add your photos in the carousel.
-
-
-![](https://media.giphy.com/media/1pAec1lAYIfAtbOVpS/giphy.gif)
